@@ -606,6 +606,11 @@ h1
 	font-weight:bold;
 }
 
+.lws-header
+{
+    align-items: center;
+}
+
 
 
 .usa-header
