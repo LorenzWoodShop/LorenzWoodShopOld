@@ -1,88 +1,12 @@
 ﻿body 
 {
     font-family: "Palatino Linotype", serif;
-}     
-
-@media all and (max-width: 600px) {
-    .join-yp {max-width:100%; width:100%; display:block;}
-    .stay-up {max-width:100%; width:100%; display:block; margin-right:0px;}
-
-    .join-yp img {width:100%;}
-    .stay-up img {width:100%;}
 }
-
-#quick-links ul 
-{
-    list-style-type:none;
-    width:100%;
-    margin-left:-40px;
-}  
-
-#quick-links ul li
-{
-    display:inline-block;
-    width:33%;
-    text-align:center;
-}
-
-#quick-links ul li:nth-child(3n):after {
-    content: ' ';
-    display: block;
-}
-
-
-#quick-links a:link 
-{
-    text-decoration:none;
-    font-weight:bold;
-}
-
-#quick-links a:hover 
-{
-    text-decoration:underline;
-}
-    
-@media all and (max-width: 800px) 
-{
-   #quick-links ul li
-    {
-        display:inline-block;
-        width:50%;
-        text-align:center;
-    }
-
-    #quick-links ul li:nth-child(2n):after {
-        content: ' ';
-        display: block;
-    } 
-}       
-
-@media all and (max-width: 600px) 
-{
-    #quick-links{ padding-top:10px;}
-    
-    #quick-links ul 
-    {
-        list-style-type:none;
-        width:100%;
-        margin-left:-20px !important;
-    }      
-    
-   #quick-links ul li
-    {
-        display:block;
-        width:100%;
-        text-align:center;
-    }
-
-}
-
-
 /* =Nav
 -------------------------------------------------------------- */
 
 .lws-logo {
-  max-width: 280px;
+	max-height: 280px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -90,25 +14,28 @@
 
 @media all and (max-width: 1060px) {
     .lws-logo {
-      max-width: 250px;
-      display: inline-block;
+		max-height: 250px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
     }
 }
 
 @media all and (max-width: 840px) {
     .lws-logo {
-      max-width: 220px;
-      padding:20px 0px 0px 0px;
-      display: inline-block;
+		max-height: 220px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
     }
 }
 
 @media all and (max-width: 785px) {
     .lws-logo {
-      max-width: 300px;
-      padding:0px 0px 0px 0px;
-      margin:auto;
-      display: block;
+		max-height: 300px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
     }
 }
 
@@ -137,12 +64,6 @@
       margin-top: 0px;
       border-top:1px solid #c34d29;
     }
-}
-
-
-.facebook-search {
-  display: block;
-  margin:20px 0px 20px 0px;
 }
 
 #nav-trigger {
