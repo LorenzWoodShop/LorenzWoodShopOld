@@ -21,67 +21,22 @@
         <div class="usa-grid-full lws-header">
             <img src="./img/LWSLogoTransparent.png" class="lws-logo" />
         </div>
+        <div class="usa-grid-full header-container">
+            <div id="cssmenu">
+                <ul>
+                    <li><a href="/#!/">Home</a></li>
+                    <li><a href="/#!/gallery">Gallery</a></li>
+                    <li><a href="/#!/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="usa-grid-full">
         <div class="home-copy">
             <div class="usa-main-content">
                 <!-- Content Area -->
-                <div class="usa-width-one-half">
-                    <div>
-                        <h1>Welcome to the shop.</h1>
-                        <span>
-                            Right now I'm a one-man shop getting started out of the garage, and can put in roughly
-                            8 hours a week. It is my hope to hone this craft and
-                            provide you with either the inspiration to get started yourself,
-                            or a quality piece of work that you'll enjoy for a good long time.
-                            Right now I'm focusing on pieces that are small for table top gaming, but
-                            I'd like to eventually move on to more general, and larger projects.
-                            <br /><br />
-                            Thanks for stopping by,<br />
-                            Grayson Lorenz
-                        </span>
-                    </div>
-                    <hr class="style2" />
-                    <div>
-                        <h2>Contact</h2>
-                        <span>
-                            If you like my work or have any feedback, I would enjoy hearing from you.<br /><br />
-
-                            For custom commissions, feedback or other inquiries, you can email the shop at: <br /><a href="mailto:LorenzWoodShop@gmail.com">LorenzWoodShop@gmail.com</a><br /><br />
-
-                            I am also reachable by phone: <br />
-                            (701) 354-3552<br />
-                            Please keep calls between the hours of 10AM-9PM Central.
-                        </span>
-                    </div>
-                </div>
-                <div class="usa-width-one-half">
-                    <a href="./img/HumbleShop.jpg"><img src="./img/HumbleShop.jpg" alt="Humble Shop" class="lws-image" /></a>
-					<br /><br />
-                    <div class="usa-grid-full">
-                        <div class="usa-width-one-half">
-                            <a href="./img/MetalFootBox.jpg"><img src="./img/MetalFootBox.jpg" alt="Metal Foot Box" class="lws-image" /></a>
-							<br /><br />
-                            <a href="./img/BoxGreenRound.jpg"><img src="./img/BoxGreenRound.jpg" alt="Green Box Round Feet" class="lws-image" /></a>
-							<br /><br />
-                            <a href="./img/BlueBoxRound.jpg"><img src="./img/BlueBoxRound.jpg" alt="Blue Box Round Feet" class="lws-image" /></a>
-							<br /><br />
-                            <a href="./img/BlackBoxRound.jpg"><img src="./img/BlackBoxRound.jpg" alt="Black Box Round Feet" class="lws-image" /></a>
-							<br /><br />
-                        </div>
-                        <div class="usa-width-one-half">
-                            <a href="./img/WoodFootBox.jpg"><img src="./img/WoodFootBox.jpg" alt="Wood Foot Box" class="lws-image" /></a>
-							<br /><br />
-                            <a href="./img/BoxGreenOval.jpg"><img src="./img/BoxGreenOval.jpg" alt="Green Box Oval Feet" class="lws-image" /></a>
-							<br /><br />
-                            <a href="./img/BlueBoxFlare.jpg"><img src="./img/BlueBoxFlare.jpg" alt="Blue Box Flare Feet" class="lws-image" /></a>
-							<br /><br />
-                            <a href="./img/BlackBoxFlare.jpg"><img src="./img/BlackBoxFlare.jpg" alt="Black Box Flare Feet" class="lws-image" /></a>
-							<br /><br />
-                        </div>
-                    </div>
-                </div>
+                <div data-ng-view=""></div>
             </div>
         </div>
     </div>
@@ -99,5 +54,11 @@
             </div>
         </div>
     </div>
+	<!=======Angular Routes go here===============>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/routerModule.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
