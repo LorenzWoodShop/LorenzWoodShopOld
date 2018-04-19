@@ -9,12 +9,12 @@ woodApp.config(function ($routeProvider){
 			})
 		.when('/gallery',
 			{
-			    controller: 'GalleryController',
+			    controller: '',
 			    templateUrl: 'partials/gallery.html'
 			})
 		.when('/contact',
 			{
-			    controller: 'ContactController',
+			    controller: '',
 			    templateUrl: 'partials/contact.html'
 			})
 		.otherwise({redirectTo:'/'});
