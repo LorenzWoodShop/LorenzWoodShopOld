@@ -294,10 +294,10 @@ nav#nav-mobile {
     }
 }
 
-@media (max-width: 785px){
+@media (max-width: 840px){
     #cssmenu > ul > li > a {
         padding: 16px 24px;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     #cssmenu,

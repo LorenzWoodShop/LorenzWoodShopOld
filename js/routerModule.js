@@ -17,6 +17,11 @@ woodApp.config(function ($routeProvider){
 			    controller: '',
 			    templateUrl: 'partials/contact.html'
 			})
+		.when('/pricing',
+			{
+			    controller: '',
+			    templateUrl: 'partials/pricing.html'
+			})
 		.otherwise({redirectTo:'/'});
 })
     //simple example code
