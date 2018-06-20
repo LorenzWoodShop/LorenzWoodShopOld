@@ -227,7 +227,7 @@ nav#nav-mobile {
 
 #cssmenu .mobile-only {display:none;}
 
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 840px) {
     #cssmenu .mobile-only {display:block;}
 }
 
@@ -297,7 +297,7 @@ nav#nav-mobile {
 @media (max-width: 840px){
     #cssmenu > ul > li > a {
         padding: 16px 24px;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     #cssmenu,
