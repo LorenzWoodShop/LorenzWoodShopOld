@@ -16,45 +16,29 @@
 </head>
 
 <body>
-    <div class="usa-header">
-        <div class="usa-grid-full lws-header">
-            <img src="./img/LWSLogoTransparent.png" class="lws-logo" />
-        </div>
-        <div class="usa-grid-full header-container">
-            <div id="cssmenu" class="align-center">
-                <ul>
-                    <li><a href="/#!/">Home</a></li>
-                    <li><a href="/#!/gallery">Gallery</a></li>
-                    <li><a href="/#!/pricing">Pricing</a></li>
-                    <li><a href="/#!/contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <header>
+        <a href="/#!/"><img src="./img/LWSLogoTransparent.png" class="lws-logo" /></a>
+    </header>
 
-    <div class="usa-grid-full">
-        <div class="home-copy">
-            <div class="usa-main-content">
-                <!-- Content Area -->
-                <div data-ng-view=""></div>
-            </div>
-        </div>
-    </div>
+    <nav>
+        <ul class="lws-nav">
+            <li><a href="/#!/">Home</a></li>
+            <li><a href="/#!/gallery">Gallery</a></li>
+            <li><a href="/#!/pricing">Pricing</a></li>
+            <li><a href="/#!/contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <br />
-    <br />
-    <div class="usa-footer-wrapper">
-        <hr class="style1" />
+    <main>
+        <!-- Content Area -->
+        <div data-ng-view></div>
+    </main>
 
-        <div class="usa-footer-primary-section">
-            <div class="usa-grid">
-                <div class="usa-footer-bottom center">
-                    Designed and developed by Grayson Lorenz copyright 2018
-                </div>
-            </div>
-        </div>
-    </div>
-	<!=======Angular Routes go here===============>
+    <footer>
+        Designed and developed by Grayson Lorenz copyright 2018
+    </footer>
+
+    <!=======Angular Routes go here===============>
     <script src="./js/angular.js"></script>
     <script src="./js/angular-route.js"></script>
     <script src="./js/routerModule.js"></script>
