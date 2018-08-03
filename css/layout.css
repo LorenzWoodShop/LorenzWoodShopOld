@@ -8,6 +8,11 @@ header {
     grid-area: h;
     align-items: center;
 }
+sub-header{
+    grid-area:h;
+    align-items: center;
+    height: 3em;
+}
 footer {
     grid-area: f;
     text-align: center;
