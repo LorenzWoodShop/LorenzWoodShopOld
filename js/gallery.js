@@ -6,5 +6,5 @@ angular.module('woodApp')
 })
 
 .controller('GalleryController', function ($scope, GalleryFactory) {
-   
+    $scope.title = 'Pictures of Things Made of Wood';
 });

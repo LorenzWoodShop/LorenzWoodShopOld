@@ -6,5 +6,5 @@ angular.module('woodApp')
 })
 
 .controller('ContactController', function ($scope, ContactFactory) {
-   
+    $scope.title = 'Contact Info';
 });

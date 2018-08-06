@@ -76,9 +76,9 @@ ul.lws-nav li {
 ul.lws-nav li a {
   display: block;
   min-width: 140px;
-  height: 50px;
+  height: 3em;
   text-align: center;
-  line-height: 50px;
+  line-height: 3em;
   color: #fff;
   background: #53432f;
   text-decoration: none; 
@@ -97,8 +97,8 @@ ul.lws-nav li:hover a {
 ul.lws-nav li:hover ul a {
   background: #53432f;
   color: #fff;
-  height: 40px;
-  line-height: 40px;
+  height: 3em;
+  line-height: 3em;
 }
 
 /* Hover state for dropdown links */ 
