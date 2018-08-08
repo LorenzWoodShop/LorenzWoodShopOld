@@ -126,14 +126,15 @@ ul.lws-nav li:hover a {
         display: none;
     }
 
-    /* Creates a horizontal list with spacing*/
+    /* Creates a vertical list with spacing*/
     ul.lws-nav li {
-      width: 100%;
       display: block;
     }
 
     /*Style for menu links */
     ul.lws-nav li a {
+        line-height: 6em;
+        height: 6em;
         font-size: x-large;
     }
 }
