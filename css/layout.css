@@ -90,7 +90,7 @@ body {
       "gl1 gl2 gr1 gr2";
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1190px) {
     .lws-gallery {
     grid-template-areas: 
     "gh gh"
