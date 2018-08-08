@@ -118,11 +118,6 @@ ul.lws-nav li:hover a {
 		display:inline-block;
 	}
 
-    a:hover#menu-icon {
-	    background-color: #53432f;
-	    border-radius: 4px 4px 0 0;
-    }
-
     nav:hover ul.lws-nav {
 		display: block;
 	}
