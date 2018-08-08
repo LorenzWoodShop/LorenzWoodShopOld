@@ -8,10 +8,11 @@ header {
     grid-area: h;
     align-items: center;
 }
-footer {
-    grid-area: f;
+nav {
+    grid-area: n;
     text-align: center;
     align-items: center;
+    align-content: center;
 }
 main {
     padding: 1em 1em 1em 1em;
@@ -19,8 +20,8 @@ main {
     align-items: center;
     grid-area: m;
 }
-nav {
-    grid-area: n;
+footer {
+    grid-area: f;
     text-align: center;
     align-items: center;
 }

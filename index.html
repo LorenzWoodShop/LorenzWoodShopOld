@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html data-ng-app="woodApp">
+<html ng-app="woodApp">
 <head>
     <!-- Basic Page Needs
     ================================================== -->
@@ -17,10 +17,11 @@
 
 <body>
     <header>
-        <a href="/#!/"><img src="./img/LWSLogoTransparent.png" class="lws-logo" /></a>
+        <a href="/#!/"><img src="./img/LWSLogoTransparent.png" class="lws-logo" /></a><br/>
     </header>
 
     <nav>
+        <a href="" class="menu-icon"><img class="lws-menu-icon" src="../img/menuIcon.png"/></a>
         <ul class="lws-nav">
             <li><a href="/#!/">Home</a></li>
             <li><a href="/#!/gallery">Gallery</a></li>
@@ -31,11 +32,14 @@
 
     <main>
         <!-- Content Area -->
-        <div data-ng-view></div>
+        <div ng-view></div>
     </main>
 
     <footer>
-        Designed and developed by Grayson Lorenz copyright 2018
+        <div ng-controller="FortuneController">
+            <p class="lws-fortune"><i>``{{randomFortuneText}}``</i><br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>-{{randomFortuneAuthor}}</strong></p>
+        </div>
+        Designed and developed by Grayson Lorenz copyright 2018<br /><br />
     </footer>
 
     <!=======Angular Routes go here===============>
@@ -44,5 +48,6 @@
     <script src="./js/routerModule.js"></script>
     <script src="./js/gallery.js"></script>
     <script src="./js/contact.js"></script>
+    <script src="./js/fortune.js"></script>
 </body>
 </html>

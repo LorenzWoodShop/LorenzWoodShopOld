@@ -1,6 +1,8 @@
 ﻿body 
 {
     font-family: "Palatino Linotype", serif;
+    padding:0;
+    margin: 0;
 }
 header {
     background: #B08B5D;
@@ -16,6 +18,12 @@ body {
 }
 /* Custom Stuff 
 -------------------------------------------------------------- */
+.lws-fortune{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .lws-logo {
 	max-height: 10em;
@@ -26,7 +34,7 @@ body {
 
 .lws-content{
     text-align: center; 
-    max-width: 700px;
+    max-width: 800px;
     margin:auto;
 }
 
@@ -36,7 +44,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* =Header
+/* =Headings
 -------------------------------------------------------------- */
 h1
 {
@@ -54,91 +62,107 @@ h2
 
 /* nav
 -------------------------------------------------------------- */
-/*Strip the ul of padding and list styling */
+.menu-icon {
+	display: none;
+    padding-top: .33em;
+	width: 3em;
+	height: 3em;
+    align-content:center;
+	background: #53432f;
+}
 
+.lws-menu-icon{
+	width: 3em;
+	height: 3em;
+}
+
+/*Strip the ul of padding and list styling */
 ul.lws-nav {
-    text-align:center;
-    list-style-type: none; 
-    margin: 0; 
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    overflow: hidden;
     position: center;
 }
 
 /* Creates a horizontal list with spacing*/
-
 ul.lws-nav li {
   display: inline-block;
   margin-right: 0px;
 }
 
 /*Style for menu links */
-
 ul.lws-nav li a {
   display: block;
   min-width: 140px;
-  height: 3em;
   text-align: center;
   line-height: 3em;
+  height: 3em;
   color: #fff;
   background: #53432f;
   text-decoration: none; 
-  
+  padding: .5em;
+  font-size: initial;
 }
 
 /* Hover State for top level links*/
-
 ul.lws-nav li:hover a {
-  background: #B08B5D;
-  color: #000;
-}
-
-/* Style for dropdown links*/
-
-ul.lws-nav li:hover ul a {
   background: #53432f;
-  color: #fff;
-  height: 3em;
-  line-height: 3em;
-}
-
-/* Hover state for dropdown links */ 
-ul.lws-nav li:hover ul a:hover {
-  background: #B08B5D;
   color: #000;
 }
 
-/*Hide dropdown links until they are need */
-ul.lws-nav li ul {
-  display: none;
-}
+/* nav mobile
+-------------------------------------------------------------- */
+@media (max-width: 800px) {
+    .menu-icon {
+		display:inline-block;
+	}
 
-/*Make dropdown links vertical */
+    a:hover#menu-icon {
+	    background-color: #53432f;
+	    border-radius: 4px 4px 0 0;
+    }
 
-ul.lws-nav li ul li {
-  display: block; 
-  float: none; 
-}
+    nav:hover ul.lws-nav {
+		display: block;
+	}
+    /*Strip the ul of padding and list styling */
+    ul.lws-nav {
+        display: none;
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: center;
+    }
 
-/*Prevent text wrapping */
-ul.lws-nav li ul li a {
-  width: auto; 
-  min-width: 100px; 
-  padding: 0 20px; 
-}
-
-/*Display the dropdown on hover */
-ul.lws-nav ul li a:hover + .hidden, .hidden:hover {
-  display: block; 
-}
-
-/*
-@media (min-width: 700px) {
+    /* Creates a horizontal list with spacing*/
     ul.lws-nav li {
+      width: 100%;
       display: block;
-      margin-right: 1px;
+      margin-right: 0px;
+    }
+
+    /*Style for menu links */
+    ul.lws-nav li a {
+      display: block;
+      min-width: 140px;
+      text-align: center;
+      line-height: 3em;
+      height: 3em;
+      color: #fff;
+      background: #53432f;
+      text-decoration: none; 
+      font-size: 20px;
+    }
+
+    /* Hover State for top level links*/
+    ul.lws-nav li:hover a {
+      background: #B08B5D;
+      color: #000;
     }
 }
-*/
 
 /* =Standard Classes
 -------------------------------------------------------------- */
