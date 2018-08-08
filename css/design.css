@@ -78,6 +78,7 @@ h2
 
 /*Strip the ul of padding and list styling */
 ul.lws-nav {
+    display: block;
     text-align: center;
     list-style-type: none;
     margin: 0;
