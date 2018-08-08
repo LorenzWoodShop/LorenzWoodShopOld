@@ -82,7 +82,6 @@ ul.lws-nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     position: center;
 }
 
@@ -103,9 +102,10 @@ ul.lws-nav li a {
   background: #53432f;
   text-decoration: none; 
   padding: .5em;
+  font-size: initial;
 }
 
-/* Hover State for top level links*/
+/* Hover State for nav links*/
 ul.lws-nav li:hover a {
   background: #B08B5D;
   color: #000;
@@ -129,35 +129,16 @@ ul.lws-nav li:hover a {
     /*Strip the ul of padding and list styling */
     ul.lws-nav {
         display: none;
-        text-align: center;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        position: center;
     }
 
     /* Creates a horizontal list with spacing*/
     ul.lws-nav li {
       width: 100%;
       display: block;
-      margin-right: 0px;
     }
 
     /*Style for menu links */
     ul.lws-nav li a {
-      display: block;
-      min-width: 140px;
-      text-align: center;
-      line-height: 3em;
-      height: 3em;
-      color: #fff;
-      background: #53432f;
-      text-decoration: none; 
-    }
-
-    /* Hover State for top level links*/
-    ul.lws-nav li:hover a {
-      background: #B08B5D;
-      color: #000;
+        font-size: large;
     }
 }
