@@ -113,7 +113,7 @@ ul.lws-nav li:hover a {
 
 /* nav mobile
 -------------------------------------------------------------- */
-@media (max-width: 1000px) {
+@media (pointer: none) {
     .menu-icon {
 		display:inline-block;
 	}
@@ -139,6 +139,6 @@ ul.lws-nav li:hover a {
 
     /*Style for menu links */
     ul.lws-nav li a {
-        font-size: large;
+        font-size: x-large;
     }
 }
