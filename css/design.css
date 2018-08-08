@@ -113,7 +113,7 @@ ul.lws-nav li:hover a {
 
 /* nav mobile
 -------------------------------------------------------------- */
-@media (pointer: none) {
+@media (pointer: coarse) {
     .menu-icon {
 		display:inline-block;
 	}
