@@ -103,7 +103,6 @@ ul.lws-nav li a {
   background: #53432f;
   text-decoration: none; 
   padding: .5em;
-  font-size: initial;
 }
 
 /* Hover State for top level links*/
@@ -154,7 +153,6 @@ ul.lws-nav li:hover a {
       color: #fff;
       background: #53432f;
       text-decoration: none; 
-      font-size: 20px;
     }
 
     /* Hover State for top level links*/
