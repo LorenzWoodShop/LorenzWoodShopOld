@@ -21,13 +21,21 @@
     </header>
 
     <nav>
-        <a href="" class="menu-icon"><img class="lws-menu-icon" src="../img/menuIcon.png"/></a>
-        <ul class="lws-nav">
-            <li><a href="/#!/">Home</a></li>
-            <li><a href="/#!/gallery">Gallery</a></li>
-            <li><a href="/#!/pricing">Pricing</a></li>
-            <li><a href="/#!/contact">Contact</a></li>
-        </ul>
+        <div ng-controller="NavController">
+            <button class="lws-mobile lws-button"></button>
+            <ul class="lws-nav-mobile lws-mobile">
+                <li><a href="/#!/">Home</a></li>
+                <li><a href="/#!/gallery">Gallery</a></li>
+                <li><a href="/#!/pricing">Pricing</a></li>
+                <li><a href="/#!/contact">Contact</a></li>
+            </ul>
+            <ul class="lws-nav">
+                <li><a href="/#!/">Home</a></li>
+                <li><a href="/#!/gallery">Gallery</a></li>
+                <li><a href="/#!/pricing">Pricing</a></li>
+                <li><a href="/#!/contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
