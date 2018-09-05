@@ -22,19 +22,23 @@
 
     <nav>
         <div ng-controller="NavController">
-            <button class="lws-mobile lws-button"></button>
-            <ul class="lws-nav-mobile lws-mobile">
-                <li><a href="/#!/">Home</a></li>
-                <li><a href="/#!/gallery">Gallery</a></li>
-                <li><a href="/#!/pricing">Pricing</a></li>
-                <li><a href="/#!/contact">Contact</a></li>
-            </ul>
-            <ul class="lws-nav">
-                <li><a href="/#!/">Home</a></li>
-                <li><a href="/#!/gallery">Gallery</a></li>
-                <li><a href="/#!/pricing">Pricing</a></li>
-                <li><a href="/#!/contact">Contact</a></li>
-            </ul>
+            <div class="lws-mobile">
+                <button class="lws-menu-button lws-mobile" ng-click="navClick()"><img src="{{navImage}}" /></button>
+                <ul class="lws-nav-mobile lws-mobile {{navClass}}">
+                    <li><a href="/#!/">Home</a></li>
+                    <li><a href="/#!/gallery">Gallery</a></li>
+                    <li><a href="/#!/pricing">Pricing</a></li>
+                    <li><a href="/#!/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="lws-non-mobile">
+                <ul class="lws-nav">
+                    <li><a href="/#!/">Home</a></li>
+                    <li><a href="/#!/gallery">Gallery</a></li>
+                    <li><a href="/#!/pricing">Pricing</a></li>
+                    <li><a href="/#!/contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -68,7 +72,9 @@
     <script src="./js/angular-route.js"></script>
     <script src="./js/routerModule.js"></script>
     <script src="./js/gallery.js"></script>
+    <script src="./js/pricing.js"></script>
     <script src="./js/contact.js"></script>
     <script src="./js/fortune.js"></script>
+    <script src="./js/nav.js"></script>
 </body>
 </html>

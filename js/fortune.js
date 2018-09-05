@@ -7,7 +7,8 @@ angular.module('woodApp')
         { quote: "I make things out of tree parts.", author: "Grayson Lorenz" },
         { quote: "Take time to relax especially when you don't have time for it.", author: "Random Fortune Cookie" },
         { quote: "It is better to be a warrior in a garden than a gardener in a war.", author: "Chinese Proverb" },
-        { quote: "You can be 100% right and 100% fired.", author: "Eli the Computer Guy" }
+        { quote: "You can be 100% right and 100% fired.", author: "Eli the Computer Guy" },
+        { quote: "'Tis a poor craftsman what blames his tools.", author: "Lots of people" }
     ];
 
     //=======================================Functions=======================================
