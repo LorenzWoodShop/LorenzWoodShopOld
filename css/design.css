@@ -21,13 +21,13 @@ body {
 }
 /* Custom Stuff 
 -------------------------------------------------------------- */
-.lws-hr{
+hr.lws-hr {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.lws-fortune {
+.lws-fortune{
     text-align: center;
     display: block;
     margin-left: auto;
@@ -135,7 +135,12 @@ ul.lws-nav li:hover a {
         display: inline-block;
     }
 
+<<<<<<< HEAD
+    /*Strip the ul of padding and list styling */
+    ul.lws-nav-mobile {
+=======
     nav:hover ul.lws-nav-mobile {
+>>>>>>> origin/master
         display: block;
     }
     
@@ -158,11 +163,40 @@ ul.lws-nav li:hover a {
     ul.lws-nav-mobile li a {
         line-height: 6em;
         height: 6em;
+<<<<<<< HEAD
+    }
+}
+/* mobile stuff
+-------------------------------------------------------------- */
+.lws-mobile{
+    display: none;
+}
+
+.lws-non-mobile{
+    display: initial;
+}
+
+@media (pointer: coarse) {
+    .lws-mobile {
+        display: initial;
+=======
         min-width: 140px;
         text-align: center;
         color: #fff;
         background: #53432f;
         text-decoration: none;
         font-size: initial;
+>>>>>>> origin/master
     }
+    .lws-non-mobile{
+        display: none;
+    }
+}
+
+lws-show{
+    display: initial;
+}
+
+lsw-hide{
+    display: none;
 }
