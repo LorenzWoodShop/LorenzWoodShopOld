@@ -112,6 +112,12 @@ ul.lws-nav li:hover a {
 /* nav mobile
 -------------------------------------------------------------- */
 @media (pointer: coarse) {
+    ul.lws-nav {
+        display: none;
+    }
+    /*Strip the ul of padding and list styling */
+    ul.lws-nav-mobile {
+    }
 
     /*Strip the ul of padding and list styling */
     ul.lws-nav-mobile {
