@@ -1,24 +1,27 @@
-﻿body 
-{
+﻿body {
     font-family: "Palatino Linotype", serif;
-    padding:0;
+    padding: 0;
     margin: 0;
 }
+
 header {
     background: #B08B5D;
 }
+
 footer {
     background: #B08B5D;
 }
+
 nav {
     background: #53432f;
 }
+
 body {
     background: #FFEDD7;
 }
 /* Custom Stuff 
 -------------------------------------------------------------- */
-.lws-fortune{
+.lws-fortune {
     text-align: center;
     display: block;
     margin-left: auto;
@@ -26,45 +29,61 @@ body {
 }
 
 .lws-logo {
-	max-height: 10em;
+    max-height: 10em;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.lws-content{
-    text-align: center; 
+.lws-content {
+    text-align: center;
     max-width: 800px;
-    margin:auto;
+    margin: auto;
 }
 
-.lws-image
-{
+.lws-image {
     max-width: 280px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* =Headings
 -------------------------------------------------------------- */
-h1
-{
+h1 {
     text-align: center;
-    color:#000;
-	font-weight:bold;
+    color: #000;
+    font-weight: bold;
 }
 
-h2
-{
+h2 {
     text-align: center;
-    color:#000;
-	font-weight:bold;
+    color: #000;
+    font-weight: bold;
 }
 
 /* nav
 -------------------------------------------------------------- */
-.lws-menu-icon{
-	width: 3em;
-	height: 3em;
+.menu-icon {
+    display: none;
+    padding-top: .33em;
+    width: 3em;
+    height: 3em;
+    color: #fff;
+    align-content: center;
+    background: #53432f;
+}
+
+.lws-menu-icon {
+    width: 3em;
+    height: 3em;
+}
+
+ul.lws-nav-mobile {
+    display: none;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: center;
 }
 
 /*Strip the ul of padding and list styling */
@@ -79,62 +98,65 @@ ul.lws-nav {
 
 /* Creates a horizontal list with spacing*/
 ul.lws-nav li {
-  display: inline-block;
-  margin-right: 0px;
+    display: inline-block;
+    margin-right: 0px;
 }
 
 /*Style for menu links */
 ul.lws-nav li a {
-  display: block;
-  min-width: 140px;
-  text-align: center;
-  line-height: 3em;
-  height: 3em;
-  color: #fff;
-  background: #53432f;
-  text-decoration: none; 
-  padding: .5em;
-  font-size: initial;
+    display: block;
+    min-width: 140px;
+    text-align: center;
+    line-height: 3em;
+    height: 3em;
+    color: #fff;
+    background: #53432f;
+    text-decoration: none;
+    padding: .5em;
+    font-size: initial;
 }
 
 /* Hover State for nav links*/
 ul.lws-nav li:hover a {
-  background: #B08B5D;
-  color: #000;
+    background: #B08B5D;
+    color: #000;
 }
 
 /* nav mobile
 -------------------------------------------------------------- */
 @media (pointer: coarse) {
+    .menu-icon {
+        display: inline-block;
+    }
+
+    nav:hover ul.lws-nav-mobile {
+        display: block;
+    }
+    
+    ul.lws-nav-mobile li a:active ul.lws-nav-mobile {
+        display: none;
+    }
+
     ul.lws-nav {
         display: none;
     }
-    /*Strip the ul of padding and list styling */
-    ul.lws-nav-mobile {
-    }
 
-    ul.lws-nav-mobile {
-        display: block;
-    }
+    /*Strip the ul of padding and list styling */
 
     /* Creates a vertical list with spacing*/
     ul.lws-nav-mobile li {
-      display: block;
+        display: block;
     }
 
     /*Style for menu links */
     ul.lws-nav-mobile li a {
         line-height: 6em;
         height: 6em;
-    }
-}
-/* mobile stuff
--------------------------------------------------------------- */
-.lws-mobile{
-    display:none;
-}
-@media (pointer: coarse) {
-    .lws-mobile {
-        display: initial;
+        min-width: 140px;
+        text-align: center;
+        color: #fff;
+        background: #53432f;
+        text-decoration: none;
+        font-size: initial;
     }
 }

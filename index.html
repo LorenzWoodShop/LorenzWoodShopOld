@@ -21,9 +21,9 @@
     </header>
 
     <nav>
-        <div>
-            <button class="lws-mobile lws-button"></button>
-            <ul class="lws-nav-mobile lws-mobile">
+        <div ng-controller="NavController">
+            <button class="lws-button menu-icon">Menu</button>
+            <ul class="lws-nav-mobile">
                 <li><a href="/#!/">Home</a></li>
                 <li><a href="/#!/gallery">Gallery</a></li>
                 <li><a href="/#!/pricing">Pricing</a></li>
@@ -63,12 +63,16 @@
         </script>
     </footer>
 
-    <!=======Angular Routes go here===============>
+    <!===============Angular Setup and Router===============>
     <script src="./js/angular.js"></script>
     <script src="./js/angular-route.js"></script>
     <script src="./js/routerModule.js"></script>
-    <script src="./js/gallery.js"></script>
+    <!===============Angular Files===============>
     <script src="./js/contact.js"></script>
     <script src="./js/fortune.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/pricing.js"></script>
 </body>
 </html>
