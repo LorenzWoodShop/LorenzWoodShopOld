@@ -136,3 +136,35 @@ body {
       "ph ph ph"
       "pl pl pr";
 }
+
+/* Board Calculator Layout
+--------------------------------------------------------------*/  
+
+.lws-board-calc-head{
+    grid-area: bch;
+}
+
+.lws-board-calc-left-1{
+    grid-area: bcl1;
+    text-align: right;
+}
+
+.lws-board-calc-left-2{
+    grid-area: bcl2;
+    text-align: left;
+}
+
+.lws-board-calc-right{
+    grid-area: bcr;
+}
+
+.lws-board-calc{
+    display: grid;
+    justify-content: center;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+      "bch bch bch bch"
+      "bcl1 bcl2 bcr bcr";
+}
