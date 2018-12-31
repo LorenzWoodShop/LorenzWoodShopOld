@@ -22,5 +22,10 @@ woodApp.config(function ($routeProvider){
 			    controller: 'PricingController',
 			    templateUrl: 'partials/pricing.html'
 			})
+		.when('/boardCalculator',
+			{
+			    controller: 'BoardCalculatorController',
+			    templateUrl: 'partials/boardCalculator.html'
+			})
 		.otherwise({redirectTo:'/'});
 });
