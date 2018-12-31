@@ -18,6 +18,37 @@ angular.module('woodApp')
     $scope.standards = BoardCalculatorFactory.getStandards();
     $scope.cart = [];
     $scope.cartTotal = 0;
+    var globalIndex = 0;
+
+    $scope.clearCart = function () {
+        $scope.cart = [];
+        $scope.updateTotal();
+    }
+
+    $scope.removeFromCart = function (targetIndex) {
+        var removeIndex = -1;
+        var i = 0;
+        for(board of $scope.cart) {
+            if (targetIndex === board.index) {
+                removeIndex = i;
+            }
+            i++;
+        }
+        if (removeIndex !== -1) {
+            $scope.cart.splice(removeIndex, 1);
+            $scope.updateTotal();
+        }
+    }
+
+    $scope.updateTotal = function () {
+        var newTotal = 0;
+        for(board of $scope.cart) {
+            console.log("board:",board.total);
+            newTotal += parseFloat(board.total);
+        }
+        console.log("total:", newTotal);
+        $scope.cartTotal = newTotal;
+    }
 
     $scope.addToCart = function () {
         var thickness = $scope.numThickness;
@@ -35,18 +66,20 @@ angular.module('woodApp')
         if ($scope.selectedLengthStandard.label === 'cm.') {
             length /= inToCm;
         }
-        var total = ((thickness * width * length) / 144) * price;
+        var total = (((thickness * width * length) / 144) * price).toFixed(2);
 
         $scope.cart.push(
-            { species: species, 
-            thickness: $scope.numThickness + ' ' + $scope.selectedThicknessStandard.label,
-            width: $scope.numWidth + ' ' + $scope.selectedWidthStandard.label,
-            length: $scope.numLength + ' ' + $scope.selectedLengthStandard.label,
-            price: price,
-            total: total
+            {
+                species: species,
+                thickness: $scope.numThickness + ' ' + $scope.selectedThicknessStandard.label,
+                width: $scope.numWidth + ' ' + $scope.selectedWidthStandard.label,
+                length: $scope.numLength + ' ' + $scope.selectedLengthStandard.label,
+                price: price,
+                total: total,
+                index: globalIndex
             }
         );
-
-        $scope.cartTotal += total;
+        globalIndex++;
+        $scope.updateTotal();
     }
 });

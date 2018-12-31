@@ -37,11 +37,12 @@
         <button data-ng-click="addToCart()" class="button"> Add to Cart </button>
     </div>
     <div class="lws-board-calc-right">
-        <p>Total: {{ cartTotal | currency }}</p>
+        <button data-ng-click="clearCart()" class="button"> Clear Cart </button>
+        <p><strong>Total:</strong> {{ cartTotal | currency }}</p>
         <hr class="lws-hr" />
         <ul style="list-style:none;">
             <li data-ng-repeat="board in cart">
-                {{ board.species }}<br />
+                <button data-ng-click="removeFromCart(board.index)" class="button"> Remove </button>{{ board.species }}<br/>
                 {{ board.thickness }} x {{ board.width }} x {{ board.length }}<br />
                 {{ board.price | currency }} /BF<br />
                 Total: {{ board.total | currency }}
