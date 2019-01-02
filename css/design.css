@@ -1,24 +1,38 @@
-﻿body {
+﻿
+/* Variables 
+-------------------------------------------------------------- */
+
+:root {
+    --text-color-light: #EEEEEE;
+    --text-color-dark: #111111;
+
+    --bg-light-brown: #B08B5D;
+    --bg-brown: #53432f;
+    --bg-tan: #FFEDD7;
+}
+
+body {
     font-family: "Palatino Linotype", serif;
     padding: 0;
     margin: 0;
 }
 
 header {
-    background: #B08B5D;
+    background: var(--bg-light-brown);
 }
 
 footer {
-    background: #B08B5D;
+    background: var(--bg-light-brown);
 }
 
 nav {
-    background: #53432f;
+    background: var(--bg-brown);
 }
 
 body {
-    background: #FFEDD7;
+    background: var(--bg-tan);
 }
+
 /* Custom Stuff 
 -------------------------------------------------------------- */
 hr.lws-hr {
@@ -56,13 +70,13 @@ hr.lws-hr {
 -------------------------------------------------------------- */
 h1 {
     text-align: center;
-    color: #000;
+    color: black;
     font-weight: bold;
 }
 
 h2 {
     text-align: center;
-    color: #000;
+    color: black;
     font-weight: bold;
 }
 
@@ -73,9 +87,9 @@ h2 {
     padding-top: .33em;
     width: 3em;
     height: 3em;
-    color: #fff;
+    color: white;
     align-content: center;
-    background: #53432f;
+    background: var(--bg-brown);
 }
 
 .lws-menu-icon {
@@ -115,8 +129,8 @@ ul.lws-nav li a {
     text-align: center;
     line-height: 3em;
     height: 3em;
-    color: #fff;
-    background: #53432f;
+    color: white;
+    background: var(--bg-brown);
     text-decoration: none;
     padding: .5em;
     font-size: initial;
@@ -124,8 +138,8 @@ ul.lws-nav li a {
 
 /* Hover State for nav links*/
 ul.lws-nav li:hover a {
-    background: #B08B5D;
-    color: #000;
+    background: var(--bg-light-brown);
+    color: black;
 }
 
 /* nav mobile
@@ -135,12 +149,8 @@ ul.lws-nav li:hover a {
         display: inline-block;
     }
 
-<<<<<<< HEAD
     /*Strip the ul of padding and list styling */
     ul.lws-nav-mobile {
-=======
-    nav:hover ul.lws-nav-mobile {
->>>>>>> origin/master
         display: block;
     }
     
@@ -163,7 +173,6 @@ ul.lws-nav li:hover a {
     ul.lws-nav-mobile li a {
         line-height: 6em;
         height: 6em;
-<<<<<<< HEAD
     }
 }
 /* mobile stuff
@@ -179,14 +188,12 @@ ul.lws-nav li:hover a {
 @media (pointer: coarse) {
     .lws-mobile {
         display: initial;
-=======
         min-width: 140px;
         text-align: center;
-        color: #fff;
-        background: #53432f;
+        color: white;
+        background: var(--bg-brown);
         text-decoration: none;
         font-size: initial;
->>>>>>> origin/master
     }
     .lws-non-mobile{
         display: none;

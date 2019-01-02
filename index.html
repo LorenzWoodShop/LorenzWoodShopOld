@@ -5,11 +5,13 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Lorenz Wood Shop</title>
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="./css/layout.css" />
     <link rel="stylesheet" type="text/css" href="./css/design.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- End
     ================================================== -->
 
@@ -49,32 +51,19 @@
             <p class="lws-fortune"><i>``{{randomFortuneText}}``</i><br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>-{{randomFortuneAuthor}}</strong></p>
         </div>
         <p>Designed and developed by Grayson Lorenz copyright 2018</p>
-        <p style="color:#B08B5D;" id="dimensions"></p>
-        <script type="text/javascript">
-
-            window.onresize = displayWindowSize;
-            window.onload = displayWindowSize;
-
-            function displayWindowSize() {
-                myWidth = window.innerWidth;
-                myHeight = window.innerHeight;
-                // your size calculation code here
-                document.getElementById("dimensions").innerHTML = "Screen Size (w x h) : " + myWidth + "x" + myHeight;
-            };
-        </script>
     </footer>
 
-    <!===============Angular Setup and Router===============>
+    <!--===============Angular Setup and Router===============-->
     <script src="./js/angular.js"></script>
     <script src="./js/angular-route.js"></script>
     <script src="./js/routerModule.js"></script>
-    <!===============Angular Files===============>
+    <!--===============Angular Files===============-->
+    <script src="./js/boardCalculator.js"></script>
     <script src="./js/contact.js"></script>
     <script src="./js/fortune.js"></script>
     <script src="./js/gallery.js"></script>
     <script src="./js/home.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/pricing.js"></script>
-    <script src="./js/boardCalculator.js"></script>
 </body>
 </html>
