@@ -3,8 +3,11 @@
 -------------------------------------------------------------- */
 
 :root {
-    --text-color-light: #EEEEEE;
-    --text-color-dark: #111111;
+    --text-light: #eeeeee;
+    --text-dark: #111111;
+    --text-link: #af6911;
+    --text-link-hover: #b7905f;
+    --text-link-visited: #6b400a;
 
     --bg-light-brown: #B08B5D;
     --bg-brown: #53432f;
@@ -15,6 +18,18 @@ body {
     font-family: "Palatino Linotype", serif;
     padding: 0;
     margin: 0;
+}
+
+a {
+    color: var(--text-link);
+}
+
+a:hover {
+    color: var(--text-link-hover);
+}
+
+a:visited {
+    color: var(--text-link-visited);
 }
 
 header {
