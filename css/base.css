@@ -1,0 +1,39 @@
+﻿html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Palatino Linotype", serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--text-link);
+}
+
+a:hover {
+    color: var(--text-link-hover);
+}
+
+a:visited {
+    color: var(--text-link-visited);
+}
+
+header {
+    background: var(--bg-light-brown);
+}
+
+footer {
+    background: var(--bg-light-brown);
+}
+
+nav {
+    background: var(--bg-brown);
+}
+
+body {
+    background: var(--bg-tan);
+}
