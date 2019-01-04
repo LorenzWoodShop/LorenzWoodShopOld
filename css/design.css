@@ -1,54 +1,4 @@
-﻿
-/* Variables 
--------------------------------------------------------------- */
-
-:root {
-    --text-light: #eeeeee;
-    --text-dark: #111111;
-    --text-link: #af6911;
-    --text-link-hover: #b7905f;
-    --text-link-visited: #6b400a;
-
-    --bg-light-brown: #B08B5D;
-    --bg-brown: #53432f;
-    --bg-tan: #FFEDD7;
-}
-
-body {
-    font-family: "Palatino Linotype", serif;
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    color: var(--text-link);
-}
-
-a:hover {
-    color: var(--text-link-hover);
-}
-
-a:visited {
-    color: var(--text-link-visited);
-}
-
-header {
-    background: var(--bg-light-brown);
-}
-
-footer {
-    background: var(--bg-light-brown);
-}
-
-nav {
-    background: var(--bg-brown);
-}
-
-body {
-    background: var(--bg-tan);
-}
-
-/* Custom Stuff 
+﻿/* Custom Stuff 
 -------------------------------------------------------------- */
 hr.lws-hr {
     border: 0;
@@ -64,10 +14,19 @@ hr.lws-hr {
 }
 
 .lws-logo {
-    max-height: 10em;
+    max-height: 20vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.lws-button {
+    background: var(--bg-light-brown);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    border: none;
+    padding: .5rem;
+    font-weight: bold;
 }
 
 .lws-content {
@@ -77,8 +36,49 @@ hr.lws-hr {
 }
 
 .lws-image {
-    max-width: 280px;
+    width:100%;
+    margin: 0 0 1rem 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: scale-down;
+}
+
+.lws-image--small{
+    width: 250px;
+}
+/* =BEM
+-------------------------------------------------------------- */
+.card{
+    border: 1px solid var(--border-brown);
+    padding: 1rem;
+    margin: 1rem;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card--calculator-input {
+    max-width: 800px;
+}
+
+.card--item{
+    display:block;
+    margin: .5rem;
+}
+
+.card__inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 250px;
+}
+
+.calculator-cart{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* =Headings

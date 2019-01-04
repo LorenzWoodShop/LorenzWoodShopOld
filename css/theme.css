@@ -1,0 +1,16 @@
+﻿/* Variables 
+-------------------------------------------------------------- */
+
+:root {
+    --text-light: #eeeeee;
+    --text-dark: #111111;
+    --text-link: #af6911;
+    --text-link-hover: #b7905f;
+    --text-link-visited: #6b400a;
+
+    --border-brown: #B08B5D;
+
+    --bg-light-brown: #B08B5D;
+    --bg-brown: #53432f;
+    --bg-tan: #FFEDD7;
+}

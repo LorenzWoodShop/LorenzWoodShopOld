@@ -1,53 +1,58 @@
-﻿<div class="lws-board-calc">
-    <div class="lws-board-calc-head">
-        <h1>Board Foot and Cost Calculator</h1>
-        <hr class="lws-hr" />
-        <p>
-            When you buy lumber like hardwood usually you pay per board foot, which is a unit of volume.<br />One board foot is a 1 foot wide, 1 foot long, 1 inch thick volume, or 144 cubic inches.<br />
-            Typically when you shop for wood you'll see something like Red Oak 4/4, that means it's 4 quarters of an inch thick.<br />Be sure to measure these boards as they are usually a quarter less from planing.
-        </p>
-        <hr class="lws-hr" />
+﻿
+<h1>Board Foot and Cost Calculator</h1>
+<hr class="lws-hr" />
+<p>
+    When you buy lumber like hardwood usually you pay per board foot, which is a unit of volume.<br />One board foot is a 1 foot wide, 1 foot long, 1 inch thick volume, or 144 cubic inches.<br />
+    Typically when you shop for wood you'll see something like Red Oak 4/4, that means it's 4 quarters of an inch thick.<br />Be sure to measure these boards as they are usually a quarter less from planing.
+</p>
+<hr class="lws-hr" />
+<div class="card card--calculator-input">
+    <div class="card__inputs">
+        <div style="margin-right:2rem; text-align:right">
+            <p>
+                <label for="inThickness"> Board Thickness * </label>
+                <input id="inThickness" type="number" ng-model="numThickness" />
+                <select id="selThickness" ng-init="selectedThicknessStandard = standards[0]" ng-model="selectedThicknessStandard" ng-options="standard.label for standard in standards | orderBy:'-label'"></select>
+            </p>
+            <p>
+                <label for="inWidth"> Board Width * </label>
+                <input id="inWidth" type="number" ng-model="numWidth" />
+                <select id="selWidth" ng-init="selectedWidthStandard = standards[0]" ng-model="selectedWidthStandard" ng-options="standard.label for standard in standards | orderBy:'-label'"></select>
+            </p>
+            <p>
+                <label for="inLength"> Board Length * </label>
+                <input id="inLength" type="number" ng-model="numLength" />
+                <select id="selLength" ng-init="selectedLengthStandard = standards[0]" ng-model="selectedLengthStandard" ng-options="standard.label for standard in standards | orderBy:'-label'"></select>
+            </p>
+        </div>
+        <div style="margin-right:2rem; text-align:right">
+            <p>
+                <label for="inSpecies"> Board Species </label>
+                <input id="inSpecies" type="text" ng-model="txtSpecies" />
+            </p>
+            <p>
+                <label for="inPrice"> Price/board foot * </label>
+                <input id="inPrice" type="number" ng-model="numPrice" />
+            <p>* required field </p>
+            </p>
+        </div>
     </div>
-    <div class="lws-board-calc-left-1">
-        <p><label for="inSpecies"> Board Species </label></p>
-        <p><label for="inSpecies"> Board Thickness </label></p>
-        <p><label for="inSpecies"> Board Width </label></p>
-        <p><label for="inSpecies"> Board Length </label></p>
-        <p><label for="inSpecies"> Board price per BF </label></p>
-    </div>
-    <div class="lws-board-calc-left-2">
-        <p>
-            <input id="inSpecies" type="text" ng-model="txtSpecies" />
-        </p>
-        <p>
-            <input id="inThickness" type="number" ng-model="numThickness" />
-            <select id="selThickness" ng-init="selectedThicknessStandard = standards[0]" ng-model="selectedThicknessStandard" ng-options="standard.label for standard in standards | orderBy:'-label'"></select>
-        </p>
-        <p>
-            <input id="inWidth" type="number" ng-model="numWidth" />
-            <select id="selWidth" ng-init="selectedWidthStandard = standards[0]" ng-model="selectedWidthStandard" ng-options="standard.label for standard in standards | orderBy:'-label'"></select>
-        </p>
-        <p>
-            <input id="inLength" type="number" ng-model="numLength" />
-            <select id="selLength" ng-init="selectedLengthStandard = standards[0]" ng-model="selectedLengthStandard" ng-options="standard.label for standard in standards | orderBy:'-label'"></select>
-        </p>
-        <p>
-            <input id="inLength" type="number" ng-model="numPrice" />
-        </p>
-        <button data-ng-click="addToCart()" class="button"> Add to Cart </button>
-    </div>
-    <div class="lws-board-calc-right">
-        <button data-ng-click="clearCart()" class="button"> Clear Cart </button>
+    <div>
+        <button data-ng-click="addToCart()" class="lws-button"> Add to Cart </button>
+        <button data-ng-click="clearCart()" class="lws-button"> Clear Cart </button>
         <p><strong>Total:</strong> {{ cartTotal | currency }}</p>
-        <hr class="lws-hr" />
-        <ul style="list-style:none;">
-            <li data-ng-repeat="board in cart">
-                <button data-ng-click="removeFromCart(board.index)" class="button"> Remove </button>{{ board.species }}<br/>
-                {{ board.thickness }} x {{ board.width }} x {{ board.length }}<br />
-                {{ board.price | currency }} /BF<br />
-                Total: {{ board.total | currency }}
-                <hr class="lws-hr" />
-            </li>
-        </ul>
+    </div>
+</div>
+<div ng-if="cart.length>0" class="calculator-cart">
+    <div data-ng-repeat="board in cart">
+        <div class="card card--item">
+                <button data-ng-click="removeFromCart(board.index)" class="lws-button"> <i class="fa fa-times"></i> </button>
+                <span ng-if="board.species">{{ board.species }} @ </span>
+                {{ board.price | currency }}/BF
+            <p>
+                {{ board.thickness }} x {{ board.width }} x {{ board.length }}
+            </p>
+                <strong>Total:</strong> {{ board.total | currency }}
+        </div>
     </div>
 </div>
