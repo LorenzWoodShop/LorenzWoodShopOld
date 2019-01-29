@@ -112,15 +112,6 @@ h2 {
     height: 3em;
 }
 
-ul.lws-nav-mobile {
-    display: none;
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: center;
-}
-
 /*Strip the ul of padding and list styling */
 ul.lws-nav {
     display: block;
@@ -155,70 +146,4 @@ ul.lws-nav li a {
 ul.lws-nav li:hover a {
     background: var(--bg-light-brown);
     color: black;
-}
-
-/* nav mobile
--------------------------------------------------------------- */
-@media (pointer: coarse) {
-    .menu-icon {
-        display: inline-block;
-    }
-
-    /*Strip the ul of padding and list styling */
-    ul.lws-nav-mobile {
-        display: block;
-    }
-    
-    ul.lws-nav-mobile li a:active ul.lws-nav-mobile {
-        display: none;
-    }
-
-    ul.lws-nav {
-        display: none;
-    }
-
-    /*Strip the ul of padding and list styling */
-
-    /* Creates a vertical list with spacing*/
-    ul.lws-nav-mobile li {
-        display: block;
-    }
-
-    /*Style for menu links */
-    ul.lws-nav-mobile li a {
-        line-height: 6em;
-        height: 6em;
-    }
-}
-/* mobile stuff
--------------------------------------------------------------- */
-.lws-mobile{
-    display: none;
-}
-
-.lws-non-mobile{
-    display: initial;
-}
-
-@media (pointer: coarse) {
-    .lws-mobile {
-        display: initial;
-        min-width: 140px;
-        text-align: center;
-        color: white;
-        background: var(--bg-brown);
-        text-decoration: none;
-        font-size: initial;
-    }
-    .lws-non-mobile{
-        display: none;
-    }
-}
-
-lws-show{
-    display: initial;
-}
-
-lsw-hide{
-    display: none;
 }
